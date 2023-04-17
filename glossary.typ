@@ -1,0 +1,45 @@
+#import "cits.typ": mk_footnote, statutory_text, block_quote
+
+= Glossary
+
+This section defines a number of key terms and concepts to the degree required to understand their relationship with the federal income tax. Readers with a passing familiarity may safely elect to skip this section and return as needed.
+
+== Custodial Wallets
+
+Note: The terms wallet and account are sometimes used interchangeably, but on some platforms, like Ethereum, accounts can also be smart contracts rather than just wallets that hold assets.
+
+Digital assets are said to be held in a non-custodial wallet when the account's private keys or equivalent credentials are known only to the true owner(s) of the assets held by the account.
+
+In practice, non-custodial accounts have two significant downsides. First, the owner bears sole responsibility for keeping track of and safeguarding their keys. Second, virtually all transactions involving a non-custodial account must take place on-chain, which often entails significant overhead in time, expense, and complexity. Even face-to-face transactions must take place on-chain; Alice cannot simply give Bob a piece of paper with the relevant signing credentials as a form of payment, since Bob cannot be sure that Alice hasn't memorized or otherwise retained a copy of the signing credentials and won't simply send the assets to another account she controls as soon as they part. 
+
+
+Virtual assets are said to be held in a custodial account when the corresponding private keys or credentials are controlled by a third party, and not the true owner. For example, a customer who deposits virtual currency on a centralized exchange does so by transferring their virtual currency to an account controlled by the exchange; while the depositor remains the legal owner of the underlying asset, the exchange is acting as custodian (whether this constitutes a transfer of title is contested and context-specific). When the exchange sees the customer's deposit (generally by looking for an on-chain transaction), it credits the customer’s exchange account within the exchange’s internal accounting system. Users can withdraw funds from the exchange by requesting they be sent to a new address to which the customer controls the private key. Deposit holders conduct the vast majority of their business using a centralized off-chain accounting system, then turn to a given public network or blockchain as a settlement layer. When, for example, a buy order is filled, the exchange’s internal books are modified to reflect a transfer of ownership from the seller to the buyer.
+
+This custodial account arrangement is justified by its ability to provide a more seamless user experience and enhanced liquidity. Many owners of virtual assets are happy to temporarily sacrifice the financial self-sovereignty of a non-custodial account for those improvements in user experience and liquidity. Transactions on a public blockchain are significantly slower and more expensive than transactions which take place on centralized systems; centralized exchanges can clear trades in fractions of a second, while the Ethereum and Bitcoin blockchains have a target block time of 10 minutes and 12 seconds respectively.
+
+Popular blockchain platforms including Bitcoin and Ethereum have largely failed to meet the lofty scaling goals they set for themselves over the years, so transaction times and fees are generally too high to make the underlying assets viable as peer-to-peer currencies. While there are "layer two" solutions which offer faster and cheaper transactions, the layer two solutions currently available are simply too complex and cumbersome to permit use by the average person.
+
+Nothing is without drawbacks however, and the primary drawback of a custodial account is that customer withdrawals are predicated on the solvency and compliance of the custodian. Should the custodian or deposit holder become insolvent or refuse to comply (voluntariliy or involuntarily), users will be unable exercise control over or withdraw their deposits. Because the depositor does not control the keys to the underlying assets, the depositor can no longer transfer those assets back to their address. From a tax perspective, casualty losses sustained by custodial accounts controlled by US financial institutions can reliably be verified, modulo accounting fraud on the part of the controlling institution, and should therefore be allowed.
+
+== Unspendable address <unspendable>
+
+An unspendable address, sometimes called a burn address, is a virtual currency address which can receive transactions, but cannot send them (assets can be sent to this address, but they can never be moved again). For example, Ethereum's zero address (0x00..00) is commonly used as a burn address, since finding the corresponding private key is believed to be impossible (for all practical purposes). Some ledgers which support smart contracts have the ability to create "provably" unspendable addresses by allowing funds to be sent to a smart contract which is immutable and simply contains no functionality which would allow funds to be moved ever again once they're sent to the contract address. 
+
+Unspendable addresses are relevant to federal income tax in at least two ways. First, they provide a means of affirmatively abandoning digital assets, as a transaction sending assets to an unspendable address represents an owner's irrevocable abandonment of the transferred asset. Second, they provide a vector for tax fraud; less conspicuous unspendable addresses can hold funds which a taxpayer claims are lost or stolen, but were in fact transferred to that address as a way of artificially reducing supply of a token, NFT, or other virtual asset.
+
+Other use cases for a burn address include artificially decreasing the circulating supply of an asset (for example, burning tokens) and requiring stakeholders to purchase voting power by burning virtual currency or other virtual assets in order to obtain voting power in some selection or election processes.
+
+== Smart contract
+
+Computer programs deployed to and accessible by a distributed ledger and which interact with digital assets are frequently referred to as "smart contracts". A computer program on the Ethereum network capable of minting new tokens and tracking balances of said token is an example of a smart contract. Depending on the context and platform, smart contracts may sometimes be referred to as "scripts" or some other generic term for computer programs. 
+
+While the term "smart contract" may be used more broadly to refer to computer programs embodying legal or quasi-legal agreements, the term has come to be strongly associated with distributed ledgers and digital assets.
+
+
+== ICO (Initial Coin Offering)
+
+One of the major contributors to the massive growth of virtual asset markets is the initial coin offering, or ICO. The canonical example of an ICO is as follows: Alice has an idea for a venture, but is in need of capital. Alice, and any associated business entity, announces an ICO; parties who wish to participate in this ICO may purchase "tokens" at a price to be determined by auction or similar price discovery mechanism. The tokens are created using a smart contract at virtually no cost to the issuer, and the newly-minted tokens outwardly behave in a manner very similar to other virtual currencies. That is, they are controlled by a wallet (a public and private key pair) and can be transferred by executing an on-chain transaction.
+
+The tokens do not represent an equity position in Alice's venture. Instead, they are to be the preferred (possibly sole) means by which consumers obtain the goods, services, or other outputs of Alice's venture. The funds raised through the sale of tokens are used to capitalize Alice's venture. The number of tokens issued is capped, with the cap disclosed as part of the offering. Under these conditions, investors who are not necessarily interested in using or purchasing the output of Alice's venture may still be interested in purchasing tokens, because the tokens will later be traded on the open market. If the outputs of Alice's venture are in high demand, demand for the tokens used to obtain the output of Alice's venture will be high, driving up their market price. If Dan believes this market price will eventually be higher than the sale price in the ICO, he may choose to purchase tokens with the intent of selling them at a later date for a profit.
+
+While the idealized picture of a token sale gestures toward a seemingly reasonable notion of value investing, the incredible amount of funds raised by token sales starting in 2015#mk_footnote("early_icos") gave rise to increasingly degenerate forms of token sales, culminating with the now infamous explication of "box token".#mk_footnote("box_token")

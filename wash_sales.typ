@@ -1,0 +1,37 @@
+#import "cits.typ": mk_footnote, statutory_text, block_quote
+
+= Wash Sales
+
+Many publications have pointed out that the wash sale rules of § 1091 are written so as to apply to stock and securities. Recall that the IRS has chosen to classify all or substantially all digital assets as property, not as stock or securities, creating what would appear to be a loophole.#mk_footnote("assar_p5") A number of mainstream media outlets have gone so far as to endorse this tax strategy, recommending that readers execute a wash sale, repurchase the same asset, and claim the resulting capital loss.#mk_footnote("cnbc_wash_sale")
+
+We believe proponents of this analysis may have failed to consult the most important treatise in all of federal income tax, The Art of War. Sun Tzu said: "If you know the enemy and know yourself, you need not fear the result of a hundred battles. If you know yourself but not the enemy, for every victory gained you will also suffer a defeat. If you know neither the enemy nor yourself, you will succumb in every battle." Those endorsing loss harvesting via wash sales have failed to properly know the enemy and may find themselves on the losing end of a coin toss when the tax man comes.
+
+== Enforcement via Economic Substance Doctrine
+
+In 2010, the common law doctrine known as the "economic substance doctrine" was codified as § 7701(o). This subsection provides that tax benefits under Subtitle A (where subtitle A is "Income Taxes") are not available in the case of any transaction which "does not have economic substance or lacks a business purpose".#mk_footnote("7701_o_5_A") The statute defines "Federal income tax effect" such that "any State or local income tax effect which is related to a Federal income tax effect shall be treated in the same manner as a Federal income tax effect."#mk_footnote("7701_o_3")
+
+Note that the economic substance doctrine takes 'Subchapter P - Capital Gains and Losses' off the table, because Subchapter P is contained within Subtitle A. It stands to reason that should the Service choose to use it, they have a fairly clear means by which to deny capital losses resulting from wash sales of virtual currencies. Treating these synthetic losses as noneconomic substance transactions obviates any need to contort § 1091 to somehow also cover digital assets.
+
+In the case of an individual taxpayer selling and repurchasing virtual currency, the main inquiry in determining the presence of economic substance in the case of individuals is whether the transaction or series of transactions (_see_ § 7701(o)(5)(D) or the “step transaction doctrine”) causes any change in the taxpayer's economic position. A taxpayer who sells their virtual currency and immediately repurchases it to generate a deduction does not change their economic position outside the federal income tax benefits.
+
+While the elephant in the room is effective enforcement, the revenue code establishes a web of provisions and penalties targeting this particular case. Underpayment attributable to a taxpayer's election to incorrectly derive tax benefits from transactions determined to lack economic substance are subject to a 20% penalty (see § 6662(a), and § 6662(b)(6)). Should any of these transactions further constitute "nondisclosed noneconomic substance transactions", defined by the code as "transactions that do not disclose the relevant facts or attach a separate statement including said facts", scofflaws are subject to a 40% penalty (see § 6662(i)(1)-(2)). Finally, the IRS cuts off all avenues of escape in § 6664(c)(2), disallowing the defense of "reasonable cause" for underpayment, or "good faith" on the part of the taxpayer, should the taxpayer's alleged misdeed involve transactions of the kind mentioned in § 6662(b)(6) (transactions lacking economic substance, but providing benefit to the taxpayer and resulting in underpayment).
+
+The Technical Explanation of the Staff of the Congressional Joint Committee on Taxation provides us with some additional insight into the applicability of the economic substance doctrine to a given transaction: 
+
+#block_quote()[
+The doctrine of economic substance becomes applicable [i.e. "relevant"] where a taxpayer seeks to claim tax benefits, unintended by Congress, by means of transactions that serve no economic purpose other than tax savings.
+
+[...]
+
+If the realization of the tax benefits of a transaction is consistent with the Congressional purpose or plan that the tax benefits were designed by Congress to effectuate, it is not intended that such tax benefits be disallowed. #mk_footnote("reconciliation_2010_1") 
+]
+
+From a tax policy perspective, closing this loophole by expanding § 1091 to apply to digital assets as defined in § 6045(g)(3)(D) seems like the most consistent resolution. There is little economic reason to allow this kind of loss harvesting, and if nothing else, incentivizing the immediate sale and repurchase of assets just creates artificial trade volume with the potential to distort prices in already volatile markets. Assets that could otherwise be sold in a wash sale to "harvest" a loss are generally much less liquid than virtual currency, and are therefore less likely to be the object of a wash sale. For example, selling a depreciated rental property and immediately repurchasing a nearly identical rental property next door is technically possible, but is completely impractical due to the nature of real estate transactions.
+
+The relevant Bureau of National Affairs portfolio astutely notes that "[p]aradoxically, while the penalty may empower the IRS in borderline cases, its severity may dissuade some courts from disallowing tax benefits in borderline cases where the taxpayer did in fact rely in good faith on a well-reasoned independent opinion."#mk_footnote("bna_economic_substance")
+In the short term, issuing public guidance to give taxpayers a "heads up" may be appropriate, as the "hole" in the language of § 1091 was large enough to draw the attention of practitioners and online kibitzers alike. Bringing down the hammer of a 40% strict liability penalty under § 7701(o) may create the impression that the Service is in some sense springing a trap on taxpayers.
+
+Those who would like to see a crypto-friendly resolution to the wash sale question would do well to contact their most "open-minded" congresional representative; Senator Krysten Sinema is reportedly rather malleable on these matters.#mk_footnote("sinema_tweet") Taxpayers and practitioners of more meager means who are nonetheless willing to die on the hill of loss harvesting may instead wish to read Notice 2014-58 to prepare for battle (in these troubled times, I'm afraid I must remind readers that this is hyperbole and in no way an endorsement of violence).
+
+
+Modification of § 1091 to disallow losses on wash sales of digital assets is listed as a revenue proposal in The Administration’s Fiscal Year 2024 Revenue Proposals.#mk_footnote("2024_greenbook") However, in recent years, the legislative behavior of Congress has become increasingly erratic, and lobbying efforts by the digital asset industry increased massively in 2022 (for those curious, FTX was only the ninth largest spender in 2022).#mk_footnote("open_secrets_lobbying_report")  If Congress is unable or unwilling to act to include digital assets in § 1091, it seems that it is well within the authority of the Service to force their hand by employing the economic substance doctrine.
